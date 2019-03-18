@@ -108,7 +108,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor1 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor1 = 3281;
+            conversionFactor1 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor1 = 3.28;
         } else if (name === "yard(s)") {
@@ -128,7 +128,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor1 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor1 = 3281;
+            conversionFactor1 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor1 = 3.28;
         } else if (name === "yard(s)") {
@@ -262,7 +262,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor1 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor1 = 3281;
+            conversionFactor1 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor1 = 3.28;
         } else if (name === "yard(s)") {
@@ -282,7 +282,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor1 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor1 = 3281;
+            conversionFactor1 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor1 = 3.28;
         } else if (name === "yard(s)") {
@@ -416,7 +416,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor3 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor3 = 3281;
+            conversionFactor3 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor3 = 3.28;
         } else if (name === "yard(s)") {
@@ -436,7 +436,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor3 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor3 = 3281;
+            conversionFactor3 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor3 = 3.28;
         } else if (name === "yard(s)") {
@@ -570,7 +570,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor4 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor4 = 3281;
+            conversionFactor4 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor4 = 3.28;
         } else if (name === "yard(s)") {
@@ -590,7 +590,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor4 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor4 = 3281;
+            conversionFactor4 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor4 = 3.28;
         } else if (name === "yard(s)") {
@@ -724,7 +724,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor5 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor5 = 3281;
+            conversionFactor5 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor5 = 3.28;
         } else if (name === "yard(s)") {
@@ -744,7 +744,7 @@ $(document).ready(function () {
         } else if (name === "mile(s)") {
             conversionFactor5 = 5280;
         } else if (name === "kilometer(s)") {
-            conversionFactor5 = 3281;
+            conversionFactor5 = 3280.84;
         } else if (name === "meter(s)") {
             conversionFactor5 = 3.28;
         } else if (name === "yard(s)") {
