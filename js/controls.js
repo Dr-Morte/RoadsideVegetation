@@ -252,7 +252,7 @@ $(document).ready(function () {
             }
         }
     }
-
+/*
     $('#download-pdf').on("click", function () {
 
         $("body").addClass("loading");
@@ -333,7 +333,7 @@ $(document).ready(function () {
             $("body").removeClass("loading");
         }, 0);
 
-    });
+    });*/
 
 });
 
