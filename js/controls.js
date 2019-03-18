@@ -252,7 +252,7 @@ $(document).ready(function () {
             }
         }
     }
-/*
+
     $('#download-pdf').on("click", function () {
 
         $("body").addClass("loading");
@@ -268,16 +268,17 @@ $(document).ready(function () {
         $("#slide-two-content").show();
         $("#slide-three-content").show();
 
-        var pdf = new jsPDF('l', 'pt', 'letter');
+        var pdf = new jsPDF('p', 'pt', 'letter');
 
         html2canvas($("#slide-one-content")[0], {
             allowTaint: true,
             onrendered: function(canvas) {
                 var ctx = canvas.getContext('2d');
                 var imgData = canvas.toDataURL("image/png", 1.0);
-                var width = 810;
-                var height = 580;
-                pdf.addImage(imgData, 'PNG', 20, 20, (width - 40), (height));
+                //adjusting the height and width of slide 1
+                var width = 500;
+                var height = 180;
+                pdf.addImage(imgData, 'PNG', 55, 20, (width), (height));
             }
         });
         html2canvas($("#slide-two-content")[0], {
@@ -285,10 +286,10 @@ $(document).ready(function () {
             onrendered: function(canvas) {
                 var ctx = canvas.getContext('2d');
                 var imgData = canvas.toDataURL("image/png", 1.0);
-                var width = 810;
-                var height = 580;
-                pdf.addPage();
-                pdf.addImage(imgData, 'PNG', 20, 20, (width - 40), (height));
+                var width = 510;
+                var height = 200;
+                //pdf.addPage();
+                pdf.addImage(imgData, 'PNG', 50, 220, (width), (height));
             }
         });
         html2canvas($("#slide-three-content")[0], {
@@ -296,13 +297,17 @@ $(document).ready(function () {
             onrendered: function(canvas) {
                 var ctx = canvas.getContext('2d');
                 var imgData = canvas.toDataURL("image/png", 1.0);
-                var width = 810;
-                var height = 580;
-                pdf.addPage();
-                pdf.addImage(imgData, 'PNG', 20, 20, (width - 40), (height));
+                var width = 524;
+                var height = 300;
+                //pdf.addPage();
+                pdf.addImage(imgData, 'PNG', 45, 440, (width), (height));
             }
         });
+
+        //FOR MORE THAN 1 CORE MIX
+
         if (coreMixDivs.length > 1) {
+            var counter = 0;
             for (var i = 1; i < coreMixDivs.length; i++) {
                 $("#" + coreMixDivs[i]).show();
                 html2canvas($("#"+coreMixDivs[i])[0], {
@@ -310,10 +315,19 @@ $(document).ready(function () {
                     onrendered: function(canvas) {
                         var ctx = canvas.getContext('2d');
                         var imgData = canvas.toDataURL("image/png", 1.0);
-                        var width = 810;
-                        var height = 580;
+                        var width = 564;
+                        var height = 300;
+
+                        if((counter%2) == 0){
                         pdf.addPage();
-                        pdf.addImage(imgData, 'PNG', 20, 20, (width - 40), (height));
+                        pdf.addImage(imgData, 'PNG', 20, 20, (width), (height));
+                        counter++;
+                        }
+                        else{
+                            console.log('I am even');
+                        pdf.addImage(imgData, 'PNG', 20, 370, (width), (height));
+                        counter ++;
+                        }
                     }
                 });
             }
@@ -333,7 +347,7 @@ $(document).ready(function () {
             $("body").removeClass("loading");
         }, 0);
 
-    });*/
+    });
 
 });
 
